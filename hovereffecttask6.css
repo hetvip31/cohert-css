@@ -24,7 +24,6 @@ html,body{
     position: relative;
     transition: all ease 1s;
     overflow: hidden;
-
 }
 .card img{
     height: 100%;
