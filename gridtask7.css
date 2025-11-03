@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "top-left top-center top-center"
+               "top-left center top-right "
+               "bottom-left bottom-left bottom-right"
+    ;
+}
+#top-left{
+    background-color: aqua;
+    background-image: url(https://images.pexels.com/photos/15682059/pexels-photo-15682059.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    grid-area: top-left;
+}
+#top-center{
+    background-color: blue;
+    background-image: url(https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius:20px ;
+    grid-area: top-center;
+}
+#top-right{
+    grid-area: top-right;
+    background-image: url(https://images.pexels.com/photos/13731272/pexels-photo-13731272.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    background-color: brown;
+}
+#center{
+    grid-area: center;
+    background-image: url(https://images.pexels.com/photos/20259351/pexels-photo-20259351.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    background-color: pink;
+}
+#bottom-left{
+    grid-area: bottom-left;
+    background-image: url(https://images.pexels.com/photos/14734258/pexels-photo-14734258.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    background-color: blueviolet;
+}
+#bottom-right{
+    grid-area: bottom-right;
+    background-image: url(https://images.pexels.com/photos/8363662/pexels-photo-8363662.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    background-color: crimson;
+}
